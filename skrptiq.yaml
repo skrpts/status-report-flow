@@ -1,0 +1,41 @@
+# --- Identity ---
+name: "status-report-flow"
+display_name: "Status Report Flow"
+description: "Gathers data, analyses progress, and produces stakeholder updates"
+version: "1.0.0"
+engine: ">=1.0.0"
+
+# --- Attribution ---
+author:
+  name: "skrptiq"
+  url: "https://hub.skrptiq.ai"
+
+licence: "MIT"
+repository: "https://github.com/skrpts/status-report-flow"
+
+# --- Discovery (Hub) ---
+category: "project-manager"
+tags:
+  - "status"
+  - "reporting"
+  - "stakeholders"
+
+# --- Security & Access ---
+requires:
+  services:
+    - "anthropic-claude"
+    - "openai-gpt4"
+    - "jira-cloud"
+  permissions: []
+  data_handling: []
+
+# --- Contents ---
+contents:
+  skills: 2
+  prompts: 3
+  workflows: 1
+  services: 0
+  sources: 1
+  documents: 1
+  assets: 0
+  total: 8
