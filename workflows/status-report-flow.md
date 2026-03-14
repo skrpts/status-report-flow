@@ -47,3 +47,39 @@ Stakeholder-appropriate status updates containing:
 - Key achievements and blockers
 - Risk flags with mitigation actions
 - Next steps and upcoming milestones
+
+## Inputs
+
+| Name | Required | Description | Example |
+|------|----------|-------------|---------|
+| `{{input.sprint_data}}` | Yes | Sprint or project metrics (velocity, burndown, milestones) | "Sprint 14: 34/40 points completed, 2 stories carried over" |
+| `{{input.audience_level}}` | Yes | Stakeholder audience level | executive, team lead, or team |
+
+## Outputs
+
+| Name | Description |
+|------|-------------|
+| Status update | A tailored status report matched to the audience level |
+| Ready-to-send email | The report formatted as an email, ready to copy and send |
+
+## Setup
+
+Before running this workflow:
+
+1. **Jira Cloud access** — if pulling live project data, connect your Jira instance; otherwise paste sprint metrics manually
+
+No specific AI provider or API key is required beyond your configured skrptiq LLM provider.
+
+## Provider Notes
+
+- Works well with any model — status reports are straightforward summarisation tasks
+- For executive-level reports, the model benefits from clear context about what leadership cares about
+
+## Example Input
+
+To test this workflow immediately after import:
+
+```
+Sprint data: Sprint 14 — 34 of 40 story points completed. 2 stories carried over (auth refactor, search indexing). Velocity trending up from 28 to 34 over last 3 sprints. Release v2.1 on track for 28 March.
+Audience level: executive
+```

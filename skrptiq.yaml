@@ -23,8 +23,6 @@ tags:
 # --- Security & Access ---
 requires:
   services:
-    - "anthropic-claude"
-    - "openai-gpt4"
     - "jira-cloud"
   permissions: []
   data_handling: []

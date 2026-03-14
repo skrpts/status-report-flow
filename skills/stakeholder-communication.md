@@ -5,7 +5,7 @@ title: Stakeholder Communication
 description: "Tailors project updates for different audience levels"
 tags: [Customer-Facing]
 connections:
-  - target: anthropic-claude
+  - target: llm-service
     type: runs_on
   - target: stakeholder-matrix
     type: references
