@@ -3,7 +3,7 @@ type: skill
 id: progress-tracking
 title: Progress Tracking
 description: "Synthesises velocity, burndown, and milestone data"
-tags: []
+tags: [Production]
 connections:
   - target: llm-service
     type: runs_on

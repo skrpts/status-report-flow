@@ -3,7 +3,7 @@ type: document
 id: status-report-template
 title: Status Report Template
 description: "Standard template for weekly project status reports"
-tags: []
+tags: [Production]
 connections: []
 ---
 

@@ -3,7 +3,7 @@ type: prompt
 id: track-progress
 title: Track Progress
 description: "Core prompt for analysing project progress data"
-tags: []
+tags: [Production]
 connections:
   - target: progress-tracking
     type: derived_from
@@ -16,3 +16,7 @@ Analyses project metrics to identify trends, highlight achievements, and flag co
 ## Prompt
 
 You are a project analytics specialist. Given the following project metrics (velocity, burndown, milestone progress), analyse the data and produce a progress summary. Identify positive trends, areas of concern, and any metrics that deviate significantly from plan. Provide context for variances and recommend actions where appropriate.
+
+### Inputs
+
+{{input.sprint_data}}
