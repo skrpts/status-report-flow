@@ -1,4 +1,5 @@
 # --- Identity ---
+id: "9bfe3c7e-3316-443b-820f-f61856d01fe4"
 name: "status-report-flow"
 display_name: "Status Report Flow"
 description: "Gathers data, analyses progress, and produces stakeholder updates"
