@@ -15,6 +15,8 @@ connections:
     type: uses
   - target: stakeholder-update-email
     type: uses
+  - target: llm-service
+    type: runs_on
 ---
 
 ## Overview
