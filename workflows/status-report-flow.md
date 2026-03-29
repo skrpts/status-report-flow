@@ -3,7 +3,7 @@ type: workflow
 id: status-report-flow
 title: Status Report Flow
 description: "Gathers data, analyses progress, and produces stakeholder updates"
-tags: [Production, Customer-Facing, writing:communication, communication:stakeholder, communication:status]
+tags: [Production, Customer-Facing, Communication, Metrics]
 connections:
   - target: progress-tracking
     type: uses

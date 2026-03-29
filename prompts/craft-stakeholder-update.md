@@ -3,7 +3,7 @@ type: prompt
 id: craft-stakeholder-update
 title: Craft Stakeholder Update
 description: "Core prompt for tailoring updates to stakeholder audiences"
-tags: [Production, writing:communication, communication:stakeholder, communication:status]
+tags: [Production, Audience, Communication, Metrics]
 connections:
   - target: stakeholder-communication
     type: derived_from

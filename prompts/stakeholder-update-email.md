@@ -3,7 +3,7 @@ type: prompt
 id: stakeholder-update-email
 title: Stakeholder Update Email
 description: "Task prompt for generating a formatted status update email"
-tags: [Production, writing:communication, communication:stakeholder, communication:status]
+tags: [Production, Communication, Metrics]
 connections:
   - target: stakeholder-communication
     type: derived_from
