@@ -3,7 +3,7 @@ type: source
 id: stakeholder-matrix
 title: Stakeholder Matrix
 description: "Reference for stakeholder roles, interests, and communication preferences"
-tags: [Production]
+tags: [Production, communication:status, communication:stakeholder]
 connections: []
 ---
 

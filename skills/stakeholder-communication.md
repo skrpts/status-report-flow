@@ -3,7 +3,7 @@ type: skill
 id: stakeholder-communication
 title: Stakeholder Communication
 description: "Tailors project updates for different audience levels"
-tags: [Customer-Facing]
+tags: [Customer-Facing, communication:stakeholder, communication:status]
 connections:
   - target: llm-service
     type: runs_on
