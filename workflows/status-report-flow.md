@@ -17,6 +17,8 @@ connections:
     type: uses
   - target: llm-service
     type: runs_on
+  - target: status-report-template
+    type: references
 ---
 
 ## Overview
