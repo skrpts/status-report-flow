@@ -19,6 +19,12 @@ connections:
     type: runs_on
   - target: status-report-template
     type: references
+  - target: language-polish
+    type: uses
+  - target: consistency-check
+    type: uses
+  - target: visual-spec-generation
+    type: uses
 ---
 
 ## Overview
