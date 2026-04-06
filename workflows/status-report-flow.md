@@ -9,12 +9,6 @@ connections:
     type: uses
   - target: stakeholder-communication
     type: uses
-  - target: track-progress
-    type: uses
-  - target: craft-stakeholder-update
-    type: uses
-  - target: stakeholder-update-email
-    type: uses
   - target: llm-service
     type: runs_on
   - target: status-report-template
