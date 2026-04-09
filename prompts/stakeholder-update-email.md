@@ -17,4 +17,4 @@ Produces a polished, ready-to-send status update email from analysed project dat
 
 Compose a professional status update email based on the stakeholder update below. Include a subject line, greeting, progress summary, key achievements, blockers or risks, and next steps. Keep the tone professional but approachable. The email should be scannable with clear sections and bullet points where appropriate.
 
-**Stakeholder update:** {{steps.craft-stakeholder-update.output}}
+**Stakeholder update:** {{steps.Stakeholder Communication.output}}
