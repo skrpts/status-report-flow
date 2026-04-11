@@ -4,6 +4,13 @@ id: craft-stakeholder-update
 title: Craft Stakeholder Update
 description: "Core prompt for tailoring updates to stakeholder audiences"
 tags: [Production, Audience, Communication, Metrics]
+inputs:
+  audience_level:
+    label: "Audience Level"
+    description: "How technical or experienced the audience is"
+    example: "Technical — familiar with APIs and developer tools"
+    required: true
+    type: text
 connections:
   - target: stakeholder-communication
     type: derived_from
