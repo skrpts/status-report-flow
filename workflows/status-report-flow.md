@@ -19,6 +19,16 @@ connections:
     type: uses
   - target: visual-spec-generation
     type: uses
+execution:
+  - skill: "progress-tracking"
+  - skill: "stakeholder-communication"
+    input_from: "progress-tracking"
+  - skill: "visual-spec-generation"
+    input_from: "stakeholder-communication"
+  - skill: "language-polish"
+    input_from: "visual-spec-generation"
+  - skill: "consistency-check"
+    input_from: "visual-spec-generation"
 ---
 
 ## Overview
