@@ -21,14 +21,19 @@ connections:
     type: uses
 execution:
   - skill: "progress-tracking"
+    step_type: "synthesis"
   - skill: "stakeholder-communication"
+    step_type: "generation"
     input_from: "progress-tracking"
   - skill: "visual-spec-generation"
+    step_type: "synthesis"
     input_from: "stakeholder-communication"
   - skill: "language-polish"
-    input_from: "visual-spec-generation"
+    step_type: "content"
+    input_from: "stakeholder-communication"
   - skill: "consistency-check"
-    input_from: "visual-spec-generation"
+    step_type: "review"
+    input_from: "language-polish"
 ---
 
 ## Overview
