@@ -24,16 +24,13 @@ execution:
     step_type: "synthesis"
   - skill: "stakeholder-communication"
     step_type: "generation"
-    input_from: "progress-tracking"
+  - parallel:
+    - skill: "language-polish"
+      step_type: "content"
   - skill: "visual-spec-generation"
     step_type: "synthesis"
-    input_from: "stakeholder-communication"
-  - skill: "language-polish"
-    step_type: "content"
-    input_from: "stakeholder-communication"
   - skill: "consistency-check"
     step_type: "review"
-    input_from: "language-polish"
 ---
 
 ## Overview
