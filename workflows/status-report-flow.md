@@ -31,13 +31,13 @@ execution:
     step_type: "synthesis"
   - skill: "stakeholder-communication"
     step_type: "generation"
+  - skill: "language-polish"
+    step_type: "content"
   - parallel:
-    - skill: "language-polish"
-      step_type: "content"
-  - skill: "visual-spec-generation"
-    step_type: "synthesis"
-  - skill: "consistency-check"
-    step_type: "review"
+    - skill: "visual-spec-generation"
+      step_type: "synthesis"
+    - skill: "consistency-check"
+      step_type: "review"
 ---
 
 ## Overview
