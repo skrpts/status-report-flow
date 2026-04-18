@@ -31,6 +31,7 @@ execution:
     step_type: "synthesis"
   - skill: "stakeholder-communication"
     step_type: "generation"
+    prompt: "craft-stakeholder-update"
   - skill: "language-polish"
     step_type: "content"
   - parallel:
