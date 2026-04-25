@@ -3,7 +3,7 @@ id: "9bfe3c7e-3316-443b-820f-f61856d01fe4"
 name: "status-report-flow"
 display_name: "Status Report Flow"
 description: "Gathers data, analyses progress, and produces stakeholder updates"
-version: "1.1.13"
+version: "1.1.14"
 engine: ">=1.0.0"
 
 # --- Attribution ---
@@ -32,10 +32,10 @@ requires:
 # --- Contents ---
 contents:
   skills: 5
-  prompts: 6
+  prompts: 7
   workflows: 1
   services: 1
   sources: 1
   documents: 1
   assets: 0
-  total: 15
+  total: 16

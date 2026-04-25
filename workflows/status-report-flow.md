@@ -29,6 +29,7 @@ composite_steps:
 execution:
   - skill: "progress-tracking"
     step_type: "synthesis"
+    prompt: "status-data-brief"
   - skill: "stakeholder-communication"
     step_type: "generation"
     prompt: "craft-stakeholder-update"
