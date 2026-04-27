@@ -34,11 +34,14 @@ execution:
     step_type: "generation"
     prompt: "craft-stakeholder-update"
   - skill: "language-polish"
+    prompt: "polish-language"
     step_type: "content"
   - parallel:
     - skill: "visual-spec-generation"
+      prompt: "generate-visual-spec"
       step_type: "synthesis"
     - skill: "consistency-check"
+      prompt: "check-consistency"
       step_type: "review"
 ---
 
