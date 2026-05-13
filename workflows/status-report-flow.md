@@ -37,8 +37,8 @@ execution:
     prompt: "polish-language"
     step_type: "content"
     context:
-      voice_profile: ""
-      grammar_strictness: ""
+      voice_profile: "Neutral professional tone"
+      grammar_strictness: "Professional"
   - parallel:
     - skill: "visual-spec-generation"
       prompt: "generate-visual-spec"
@@ -47,8 +47,8 @@ execution:
       prompt: "check-consistency"
       step_type: "review"
       context:
-        voice_profile: ""
-        consistency_strictness: ""
+        voice_profile: "Neutral professional tone"
+        consistency_strictness: "Standard"
 ---
 
 ## Overview
