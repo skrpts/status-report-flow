@@ -30,12 +30,15 @@ execution:
   - skill: "progress-tracking"
     step_type: "synthesis"
     prompt: "status-data-brief"
+    output: { name: "status_data", type: "text" }
   - skill: "stakeholder-communication"
     step_type: "generation"
     prompt: "craft-stakeholder-update"
+    output: { name: "stakeholder_update", type: "text" }
   - skill: "language-polish"
     prompt: "polish-language"
     step_type: "content"
+    output: { name: "polished_report", type: "text" }
     context:
       voice_profile: "Neutral professional tone"
       grammar_strictness: "Professional"
@@ -43,9 +46,11 @@ execution:
     - skill: "visual-spec-generation"
       prompt: "generate-visual-spec"
       step_type: "synthesis"
+      output: { name: "visual_spec", type: "text" }
     - skill: "consistency-check"
       prompt: "check-consistency"
       step_type: "review"
+      output: { name: "consistency_verdict", type: "decision" }
       context:
         voice_profile: "Neutral professional tone"
         consistency_strictness: "Standard"

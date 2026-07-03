@@ -3,7 +3,7 @@ id: "9bfe3c7e-3316-443b-820f-f61856d01fe4"
 name: "status-report-flow"
 display_name: "Status Report Flow"
 description: "Gathers data, analyses progress, and produces stakeholder updates"
-version: "1.1.25"
+version: "1.1.26"
 engine: ">=0.1.0"
 
 # --- Attribution ---
@@ -77,3 +77,17 @@ contents:
   documents: 1
   assets: 0
   total: 7
+
+security:
+  status: "pass"
+  scanned_at: "2026-07-03T11:10:37.488Z"
+  scanner_version: "3.3.0"
+  syntactic: "pass"
+  structural: "pass"
+  detected:
+    services: ["llm-service"]
+    permissions: []
+    data_handling: []
+  undeclared: []
+  warnings: []
+  report_url: "https://hub.skrptiq.ai/skrpts/status-report-flow/security"
