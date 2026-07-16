@@ -2,7 +2,7 @@
 type: workflow
 id: status-report-flow
 title: Status Report Flow
-description: "Gathers data, analyses progress, and produces stakeholder updates"
+description: "Gathers data, analyzes progress, and produces stakeholder updates"
 tags: [Production, Customer-Facing, Communication, Metrics]
 connections:
   - target: progress-tracking
@@ -58,17 +58,17 @@ execution:
 
 ## Overview
 
-This workflow collects project data, analyses progress against milestones, and produces tailored status updates for different stakeholder audiences.
+This workflow collects project data, analyzes progress against milestones, and produces tailored status updates for different stakeholder audiences.
 
 ## Pipeline Stages
 
 ### Stage 1: Data Gathering
 
-Invoke the **progress-tracking** skill to synthesise velocity, burndown, and milestone data from the project management tooling.
+Invoke the **progress-tracking** skill to synthesize velocity, burndown, and milestone data from the project management tooling.
 
 ### Stage 2: Progress Analysis
 
-Invoke the **track-progress** prompt to analyse gathered data and identify trends, risks, and highlights worth reporting.
+Invoke the **track-progress** prompt to analyze gathered data and identify trends, risks, and highlights worth reporting.
 
 ### Stage 3: Stakeholder Update
 
@@ -111,7 +111,7 @@ No specific AI provider or API key is required beyond your configured skrptiq LL
 
 ## Provider Notes
 
-- Works well with any model — status reports are straightforward summarisation tasks
+- Works well with any model — status reports are straightforward summarization tasks
 - For executive-level reports, the model benefits from clear context about what leadership cares about
 
 ## Example Input

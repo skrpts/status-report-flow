@@ -11,7 +11,7 @@ connections:
 
 ## Purpose
 
-Produces a polished, ready-to-send status update email from analysed project data.
+Produces a polished, ready-to-send status update email from analyzed project data.
 
 ## Prompt
 
