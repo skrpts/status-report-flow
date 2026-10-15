@@ -13,6 +13,8 @@ connections:
     type: runs_on
   - target: status-report-template
     type: references
+  - target: status-email-composition
+    type: uses
   - target: language-polish
     type: uses
   - target: consistency-check
@@ -23,6 +25,7 @@ output_step: "visual-spec-generation"
 composite_steps:
   - "progress-tracking"
   - "stakeholder-communication"
+  - "status-email-composition"
   - "language-polish"
   - "consistency-check"
   - "visual-spec-generation"
@@ -35,6 +38,10 @@ execution:
     step_type: "generation"
     prompt: "craft-stakeholder-update"
     output: { name: "stakeholder_update", type: "text" }
+  - skill: "status-email-composition"
+    prompt: "stakeholder-update-email"
+    step_type: "generation"
+    output: { name: "update_email", type: "text" }
   - skill: "language-polish"
     prompt: "polish-language"
     step_type: "content"
@@ -93,6 +100,8 @@ Stakeholder-appropriate status updates containing:
 |------|----------|-------------|---------|
 | `{{input.sprint_data}}` | Yes | Sprint or project metrics (velocity, burndown, milestones) | "Sprint 14: 34/40 points completed, 2 stories carried over" |
 | `{{input.audience_level}}` | Yes | Stakeholder audience level | executive, team lead, or team |
+| `{{input.project_status}}` | Yes | Current project status — progress, metrics, blockers | `Paste project status data here` |
+| `{{input.reporting_period}}` | No | Time period covered | `Week of April 21-25, 2026` |
 
 ## Outputs
 

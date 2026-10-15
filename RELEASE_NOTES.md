@@ -1,5 +1,13 @@
 # Release Notes
 
+## v1.1.29
+GH#1045 — the email generation stage now runs. This skrpt is named for producing a status update email, the stage was documented as Stage 4, and nothing invoked it — so the pipeline produced a status update and stopped short of the email it promises.
+
+The stage's prompt shipped with the package from the start and is unchanged. It now runs on the stakeholder update, turning it into a formatted email: a subject line that states what changed, decisions needed placed near the top with their owners and dates, then progress, risks and detail. The email then flows through the existing polish step as before.
+
+## v1.1.28
+GH#1044 — document the inputs this workflow's prompts REQUIRE but its Inputs table never listed. A user supplying exactly what the table asked for was running with required parameters unsatisfied — a silent wrong run, not a documentation nicety. documented 2 input(s): project_status, reporting_period. Every row is generated from the requiring prompt's own declared description, example and required flag — none invented. No behaviour change; documentation only.
+
 ## v1.1.27
 GH#845 — republish with American English (en-US) content, completing the source-only GH#805 flip that never reached the Hub. Copy only — no functional or behaviour change.
 
