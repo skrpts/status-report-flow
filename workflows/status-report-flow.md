@@ -49,11 +49,19 @@ execution:
     context:
       voice_profile: "Neutral professional tone"
       grammar_strictness: "Professional"
+    bindings:
+      source:
+        from_step: "Status Email Composition"
+        field: output
   - parallel:
     - skill: "visual-spec-generation"
       prompt: "generate-visual-spec"
       step_type: "synthesis"
       output: { name: "visual_spec", type: "text" }
+      bindings:
+        source:
+          from_step: "Language Polish"
+          field: output
     - skill: "consistency-check"
       prompt: "check-consistency"
       step_type: "review"
@@ -61,6 +69,10 @@ execution:
       context:
         voice_profile: "Neutral professional tone"
         consistency_strictness: "Standard"
+      bindings:
+        source:
+          from_step: "Language Polish"
+          field: output
 ---
 
 ## Overview

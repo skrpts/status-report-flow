@@ -1,5 +1,22 @@
 # Release Notes
 
+## v1.1.30
+GH#1100 consumer wave (batch 3) — declare the data flow this workflow was resolving positionally.
+
+Each stage below now receives its input through a declared `bindings:` entry instead of `default_from_previous`, which K-073 revoked. **The value is unchanged**: every binding names the step that immediately precedes it, which is exactly what the positional default resolved to. What changes is that the dependency is stated rather than inferred from position, so a reorder can no longer silently feed a stage the wrong artefact.
+
+Bindings added:
+  `polish-language` ← `from_step: "Status Email Composition"` (step 4)
+  `generate-visual-spec` ← `from_step: "Language Polish"` (step 5)
+  `check-consistency` ← `from_step: "Visual Spec Generation"` (step 6)
+
+Dependency pins moved to the published versions that declare these slots:
+  `check-consistency` 1.0.5 → 1.0.6
+  `generate-visual-spec` 1.0.3 → 1.0.4
+  `polish-language` 1.0.1 → 1.0.7
+  `track-progress` 1.0.3 → 1.0.4
+  `visual-spec-generation` 1.0.1 → 1.0.2
+
 ## v1.1.29
 GH#1045 — the email generation stage now runs. This skrpt is named for producing a status update email, the stage was documented as Stage 4, and nothing invoked it — so the pipeline produced a status update and stopped short of the email it promises.
 
